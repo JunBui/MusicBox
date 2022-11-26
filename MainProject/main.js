@@ -1,0 +1,1 @@
+alert("Khong thay thong bao nay la bi tet dit")
