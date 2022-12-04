@@ -101,7 +101,6 @@ modal
 .btn.btn-nomal:hover{
     background-color: rgba(0,0,0,0.08);
 }
-
 .btn.btn--primary{
     color:#fff;
     background-color: var(--primary-color);
