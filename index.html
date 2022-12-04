@@ -18,6 +18,7 @@
 
       <header class="header">
         <div class="grid">
+
           <nav class="header__navbar">
             <ul class="header__navbar-list">
               <li class="header__navbar-item ">Trang chủ</li>
@@ -36,6 +37,7 @@
                   <i class="header__navbar-icon fa-brands fa-twitter"></i>
                 </a>
               </li>
+              <i class="logo">MusicBox</i>
             </ul>
   
             <ul class="header__navbar-list">
@@ -90,11 +92,56 @@
                   Tin nhắn
                 </a>
               </li>
-              <li class="header__navbar-item header__navbar--item-strong header__navbar-item--separate">Đăng ký</li>
+              <li class="header__navbar-item header__navbar--item-strong header__navbar-item--separate js-auth-form__headding">Đăng ký</li>
               <li class="header__navbar-item header__navbar--item-strong">Đăng nhập</li>
 
             </ul>
           </nav>
+
+          <!-- header with search -->
+
+          <div class="header-with-search">
+            
+            <!-- Logo -->
+
+            <div class="header__logo-description">
+              <i class=" header__logo-icon">MusicBox</i>
+            </div>
+
+            <div class="header__search">
+              <div class="header__search-input-wrap">
+                <input type="text" class="header__search-input" placeholder="Tìm kiếm bài hát">
+
+                <!-- start search history -->
+
+                <div class="header__search-history">
+                  <h3 class="header__search-history-headding">Lịch sử tìm kiếm</h3>
+                  <ul class="header__search-history-list">
+                    <li class="header__search-history-item">
+                      <a href="">Tình yêu là</a>
+                    </li>
+
+                    <li class="header__search-history-item">
+                      <a href="">Lời có cánh</a>
+                    </li>
+
+                    <li class="header__search-history-item">
+                      <a href="">Yêu em qua dòng tin nhắn</a>
+                    </li>
+                  </ul>
+                </div>
+              
+              </div>
+              <button class="header__search-btn">
+                <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+
+            <div class="header__logo">
+
+            </div>
+
+          </div>
         </div>
       </header>
 
@@ -111,14 +158,14 @@
 
     <!-- start modal -->
 
-    <div class="modal">
+    <div class="modal js-modal">
       <div class="modal__overlay">
 
       </div>
 
-      <div class="modal__body">    
-          <!-- authen form -->
-          <div class="auth-form">
+      <div class="modal__body ">    
+          <!--Register form -->
+          <div class="auth-form ">
             <div class="auth-form__container">
               <div class="auth-from__header">
                 <h3 class="auth-form__headding">Đăng ký</h3>
@@ -148,8 +195,59 @@
               </div>
   
               <div class="auth-form__controls">
-                <button class="btn btn-nomal auth-form__controls-back">QUAY LẠI</button>
+                <button class="btn btn-nomal auth-form__controls-back js-modal-close js-modal-back">QUAY LẠI</button>
                 <button class="btn btn--primary">ĐĂNG KÝ</button> 
+              </div>
+            </div>
+
+            <div class="auth-form__socials">
+              <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                <i class="auth-form__socials-icon fa-brands fa-square-facebook"></i>
+                 <span class="auth-form__socials-title">
+                   Kết nối Facebook
+                 </span>
+              
+                </a>
+              <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                <span class="auth-form__socials-title">         
+                  Kết nối Google
+                </span>
+              </a>
+            </div>
+          </div>
+  
+           <!--Login form -->
+          <!-- <div class="auth-form">
+            <div class="auth-form__container">
+              <div class="auth-from__header">
+                <h3 class="auth-form__headding">Đăng nhập</h3>
+                <span class="auth-form__switch-btn">Đăng ký</span> 
+              </div>
+  
+              <div class="auth-form__form">
+                <div class="auth-form__group">
+                  <input type="text" class="auth-form__input" placeholder="Nhập email">
+                </div>
+  
+                <div class="auth-form__group">
+                  <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu">
+                </div>
+  
+                
+              </div>
+  
+              <div class="auth-form__aside">
+                <div class="auth-form__help">
+                  <a href="" class="auth-form__link auth-form__help-forgot">Quên mật khẩu</a>
+                  <div class="auth-form__help-separate"></div>
+                  <a href="" class="auth-form__link">Bạn cần trợ giúp?</a>
+                </div>
+              </div>
+  
+              <div class="auth-form__controls">
+                <button class="btn btn-nomal auth-form__controls-back">QUAY LẠI</button>
+                <button class="btn btn--primary">ĐĂNG NHẬP</button> 
               </div>
             </div>
             
@@ -168,9 +266,40 @@
                 </span>
               </a>
             </div>
-          </div>
-        
+          </div>   -->
+          <p>hdhshhdh</p>
+          
       </div>
     </div>
+  <script>
+    const auth_register = document.querySelector('.js-auth-form__headding')
+    const modal = document.querySelector('.js-modal')
+    const modalBack = document.querySelector('.js-modal-back')
+
+    // show register
+
+    function showAuth_register(){
+      modal.classList.add('open')
+    }
+
+    // hiden register
+
+    function hidenAuth_register(){
+      modal.classList.remove('open')
+    }
+
+    auth_register.addEventListener('click', showAuth_register)
+    modalBack.addEventListener('click', hidenAuth_register)
+
+    // modal.addEventListener('click', hidenAuth_register)
+
+    // const modalContainer = document.querySelection('.js-modal__auth-form')
+
+    // modalContainer.addEventListener('click', function(event){
+    //   event.stopPropagation()
+    // })
+    
+
+  </script>
 </body>
-</html>
+</html> 
