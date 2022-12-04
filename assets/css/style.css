@@ -453,3 +453,7 @@ margin-left: 12px;
     text-decoration: none;
     line-height: 34px;
 }
+
+.header__navbar-item.header__navbar-item--has-notify {
+    z-index: 1;
+}
