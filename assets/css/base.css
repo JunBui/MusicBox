@@ -6,6 +6,11 @@
     --boder-color: #dbdbdb;
 }
 
+.footer{
+    height: 500px;
+    background-color: #121213;
+}
+
 *{
     box-sizing: inherit;
 }
