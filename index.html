@@ -194,41 +194,71 @@
                 
                 <li class="song_item">
                   <span>04</span>
-                  <img src="./assets/css/fonts/img/nụ cười nàng.jpg" alt="">
-                  <h5>Nụ cười nàng<br>
-                    <div class="sub_title">Pjnboys</div></h5>
-                  <i class="bi bi-play-circle-fill playListPlay" id = "4"></i>
+                  <img src="./assets/css/fonts/img/một ngàn nỗi đau.jpg" alt="">
+                  <h5>Một ngàn nỗi đau<br>
+                    <div class="sub_title">Văn Mai Hương</div></h5>
+                  <i class="bi bi-play-circle-fill playListPlay" id = "5"></i>
                 </li>
 
                 <li class="song_item">
-                  <span>04</span>
-                  <img src="./assets/css/fonts/img/nụ cười nàng.jpg" alt="">
-                  <h5>Nụ cười nàng<br>
-                    <div class="sub_title">Pjnboys</div></h5>
-                  <i class="bi bi-play-circle-fill playListPlay" id = "4"></i>
+                  <span>05</span>
+                  <img src="./assets/css/fonts/img/vì anh đâu có biết.jpg" alt="">
+                  <h5>Vì anh đâu có biết<br>
+                    <div class="sub_title">Madihu,Vũ</div></h5>
+                  <i class="bi bi-play-circle-fill playListPlay" id = "6"></i>
                 </li>
               
                 <li class="song_item">
-                  <span>04</span>
-                  <img src="./assets/css/fonts/img/nụ cười nàng.jpg" alt="">
-                  <h5>Nụ cười nàng<br>
-                    <div class="sub_title">Pjnboys</div></h5>
-                  <i class="bi bi-play-circle-fill playListPlay" id = "4"></i>
+                  <span>06</span>
+                  <img src="./assets/css/fonts/img/anh yêu em cực.jpg" alt="">
+                  <h5>Anh yêu em cực<br>
+                    <div class="sub_title">Linh Thộn, Minh Vũ</div></h5>
+                  <i class="bi bi-play-circle-fill playListPlay" id = "7"></i>
                 </li>
 
                 <li class="song_item">
-                  <span>04</span>
-                  <img src="./assets/css/fonts/img/nụ cười nàng.jpg" alt="">
-                  <h5>Nụ cười nàng<br>
-                    <div class="sub_title">Pjnboys</div></h5>
-                  <i class="bi bi-play-circle-fill playListPlay" id = "4"></i>
+                  <span>07</span>
+                  <img src="./assets/css/fonts/img/ta còn một đời để yêu.jpg" alt="">
+                  <h5>Ta còn một đời để yêu<br>
+                    <div class="sub_title">Đoàn Minh Quân</div></h5>
+                  <i class="bi bi-play-circle-fill playListPlay" id = "7"></i>
                 </li>
-
+                
               </div>
             </div>
             <div class="song_side"></div>
            <div class="master_play">
-              <div class="wave"></div>
+              <div class="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+              </div>
+              <img src="./assets/css/fonts/img/tệ thật anh nhớ em.jpg" alt="" id="poster_master_play">
+              <h5 id="title">
+                Tệ thật anh nhớ em
+                <div class="sub-title">Quang Huy</div>
+              </h5>
+              <div class="icon">
+                <i class="bi shuffle bi-music-note-beamed">next</i>
+                <i class="bi bi-skip-start-fill"></i>
+                <i class="bi bi-play-fill"></i>
+                <i class="bi bi-skip-end-fill"></i>
+                <i class="bi bi-cloud-download-fill" id="download_music"></i>
+              </div>
+              <span id="currentStart">0:00</span>
+              <div class="bar">
+                <input type="range" id="seek" min = "0" max = "100">
+                <div class="bar2" id = "bar2"></div>
+                <div class="dot"></div>
+              </div>
+              <span id="currentEnd">0:30</span>
+              <div class="vol">
+                <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+                <input type="range" min="0" max="100" id="vol">
+                <div class="vol_bar"></div>
+                <div class="dot" id = "vol_dot"></div>
+                
+              </div>
             </div> 
 
           </header>
@@ -236,7 +266,7 @@
      
 
       <footer class="footer">
-
+        
       </footer>
     </div>
 
@@ -385,7 +415,6 @@
     //   event.stopPropagation()
     // })
     
-
   </script>
 </body>
 </html> 
