@@ -881,14 +881,16 @@ margin-left: 12px;
     content: '';
     position: absolute;
     width: 100%;
-    height: 300px;
+    height: 300px   ;
 }
+
+/* begin popular song */
 
 .content header .song_side .popular_song{
     width: 90%;
     height: auto;
     margin: auto;
-    margin-top: 15px;
+    margin-top: 5px;
     /* border: 1px solid #fff; */
 }
 
@@ -896,6 +898,7 @@ margin-left: 12px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 14px;
 }
 
 .content header .song_side .popular_song .h4 .bi{
@@ -964,7 +967,7 @@ margin-left: 12px;
 .content header .song_side .popular_song .pop_song li h5{
     padding: 5px 0px 0px -5px;
     line-height: 15px;
-    font-size: 10px;
+    font-size: 9px;
     width: 100px;
     overflow: hidden;
     white-space: nowrap;
@@ -980,10 +983,11 @@ margin-left: 12px;
 }
 
 .content header .song_side .popular_artists{
-    width: 100%;
-    height: 130px;
+    width: 90%;
+    height: auto;
     /* border: 1px solid #fff; */
-    /* margin-top: 15px; */
+    margin-top: 15px;
+    margin: auto;
 
 }
 
@@ -991,6 +995,8 @@ margin-left: 12px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 14px
+
 }
 
 .content header .song_side .popular_artists .h4 .bi{
@@ -1006,7 +1012,7 @@ margin-left: 12px;
 .content header .song_side .popular_artists .item{
     width: 100%;
     height:auto;
-    margin-top: 15px;
+    margin-top: 10px;
     display: flex;
     /* border: 1px solid #fff; */
     overflow: auto;
@@ -1020,8 +1026,8 @@ margin-left: 12px;
 .content header .song_side .popular_artists .item li{
     list-style-type: none;
     position: relative;
-    width: 60px;
-    height: 60px;
+    min-width: 50px;
+    height: 50px;
     border-radius: 50%;
     margin-right: 20px;
     cursor: pointer;
@@ -1031,5 +1037,6 @@ margin-left: 12px;
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    position: absolute;
 }
 
